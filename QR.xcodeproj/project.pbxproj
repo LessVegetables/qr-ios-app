@@ -6,6 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01118F8E2F4862C3009CC841 /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 01118F8D2F4862C3009CC841 /* QRCode */; };
+		01118F942F4862C3009CC841 /* QRCodeStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 01118F932F4862C3009CC841 /* QRCodeStatic */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01118F962F486607009CC841 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0116C7CC2F47627700EED589 /* QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01118F8E2F4862C3009CC841 /* QRCode in Frameworks */,
+				01118F942F4862C3009CC841 /* QRCodeStatic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +75,7 @@
 				0116C7C82F47627700EED589 /* Sources */,
 				0116C7C92F47627700EED589 /* Frameworks */,
 				0116C7CA2F47627700EED589 /* Resources */,
+				01118F962F486607009CC841 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -65,6 +86,8 @@
 			);
 			name = QR;
 			packageProductDependencies = (
+				01118F8D2F4862C3009CC841 /* QRCode */,
+				01118F932F4862C3009CC841 /* QRCodeStatic */,
 			);
 			productName = QR;
 			productReference = 0116C7CC2F47627700EED589 /* QR.app */;
@@ -94,6 +117,9 @@
 			);
 			mainGroup = 0116C7C32F47627700EED589;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				01118F8C2F4862C3009CC841 /* XCRemoteSwiftPackageReference "QRCode" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0116C7CD2F47627700EED589 /* Products */;
 			projectDirPath = "";
@@ -259,8 +285,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,8 +317,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +358,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01118F8C2F4862C3009CC841 /* XCRemoteSwiftPackageReference "QRCode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dagronf/QRCode";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 27.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01118F8D2F4862C3009CC841 /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01118F8C2F4862C3009CC841 /* XCRemoteSwiftPackageReference "QRCode" */;
+			productName = QRCode;
+		};
+		01118F932F4862C3009CC841 /* QRCodeStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01118F8C2F4862C3009CC841 /* XCRemoteSwiftPackageReference "QRCode" */;
+			productName = QRCodeStatic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0116C7C42F47627700EED589 /* Project object */;
 }
