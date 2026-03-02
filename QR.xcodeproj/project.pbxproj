@@ -28,9 +28,22 @@
 		0116C7CC2F47627700EED589 /* QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		01ADB2F82F558F58005C8C24 /* Exceptions for "QR" folder in "QR" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0116C7CB2F47627700EED589 /* QR */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0116C7CE2F47627700EED589 /* QR */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				01ADB2F82F558F58005C8C24 /* Exceptions for "QR" folder in "QR" target */,
+			);
 			path = QR;
 			sourceTree = "<group>";
 		};
@@ -282,6 +295,8 @@
 				DEVELOPMENT_TEAM = 59ZQ43V697;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QR/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save generated QR codes to your Photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +329,8 @@
 				DEVELOPMENT_TEAM = 59ZQ43V697;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QR/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save generated QR codes to your Photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
