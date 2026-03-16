@@ -25,7 +25,7 @@ struct AcknowledgementsVIew: View {
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 
     var body: some View {
-        NavigationSplitView {
+        NavigationStack {
             List {
                 Section(header: Text("App Version: \(getAppVersion())")){
                     Text("A simple pet-project app, made by [Daniel Gehrman](https://www.d.gehrman.me/apps/qr)")
@@ -34,7 +34,7 @@ struct AcknowledgementsVIew: View {
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
                 }
-            
+                
                 Section(header: Text("QR uses this open source software")) {
                     ForEach(sources) { source in
                         Link(source.name, destination: URL(string: source.url)!)
@@ -45,11 +45,8 @@ struct AcknowledgementsVIew: View {
             .navigationTitle("About QR")
             .navigationBarTitleDisplayMode(.inline)
             .listStyle(.insetGrouped)
-
-        } detail: {
-            Text("Select a source")
-                .font(.title)
-                .foregroundStyle(.secondary)
+            //            .listStyle(.plain)
+            
         }
     }
     
